@@ -1,7 +1,438 @@
+/********************************************************
+GENERAL
+*********************************************************/
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+html {
+	position:relative;
+}
+
 body {
-	text-align:center; 
-	background-size: contain;
-	background-color: lightblue;
-	background-position: center;
+	font-family:'Helvetica Neue', Helvetica, sans-serif;
+	background: #EDEDED;
+	position:absolute;
+
+}
+
+a {
+	text-decoration:none;
+}
+
+.clearfix {
+	clear:both;
+	width:100%;
+}
+
+/********************************************************
+HEADER
+*********************************************************/
+
+ header {
+  	position:fixed; 
+	width:100%;
+	min-width:780px;
+	height: 70px;
+	top: 0;
+	left:0;
+	z-index:10;
+	border-bottom: 5px solid #D2DADF;
+	background-color: rgba(221,212,247, .8);
+}
+
+.logo {
+	font-family:'Raleway', 'Helvetica-Neue', Helvetica;
+	font-weight: 100;
+	width:70%;
+	padding: 0;
+	font-size: 4em;
+	color:white;
+	margin: 0 0 0 20px;
+	z-index:30;
+}
+
+nav ul {
+	position:relative;
+	bottom: 100px;
+	z-index:30;
+}
+
+
+.nav li {
+	display: inline-block;
+	margin: 50px 10px 0 50px;
+	float:right;
+	z-index:30; 
+}
+
+.nav li a:hover {
+	background: #BEE3FD;
+}
+
+.nav li a {
+	font-size: 1.2em;
+	color:#949494;
+	font-family: 'Helvetica-Neue', Helvetica, sans-serif;
+	font-weight:400;
+}
+
+.nav img {
+	position: relative;
+	top:2.5px;
+	margin-right: 3.5px;
+	height: 20px;
+	width: 20px;
+}
+
+.Contact img {
+	position: relative;
+	top:5px;
+	height: 15px;
+	width: 20px;
+} 
+
+.Contact a {
+	position:relative;
+	top:2.5px;
+	text-decoration: none;
+}
+
+
+
+
+/********************************************************
+HOME SECTION
+*********************************************************/
+
+#home {
+	/* top makes the home section line up RIGHT after the nav bar*/
+	position:relative;
+	height: 110vh; 
+	background-image:url("../images/me1.jpg"); 
+	background-position:left;
 	background-repeat: no-repeat;
-}	
+	background-attachment:fixed;
+	background-size:cover;
+	background-position: top center;
+	margin-top:-25px;
+	min-width:1130px;
+} 
+
+
+
+	
+
+#home div.right_introbox {
+	border: 5px solid #D2DADF;
+	position:relative;
+	top:35%;
+	height:290px;
+	width:580px;
+	margin: 0 auto;
+}
+
+#home h3 {
+	text-align:right;
+	font-size: 1.6em;
+	padding-left: 10px;
+	padding-top:220px;
+	font-weight:400;
+	color:white;
+}
+
+#home p {
+	position:relative;
+	border-top: 5px solid #D2DADF;
+	border-left: 5px solid #D2DADF;
+	left:15%;
+	top:2.5%;
+	width: 280px;
+	height: 142px;
+	text-align:right;
+	font-size: .85em;
+	padding-right: 10px;
+	padding-left:200px;
+	padding-top: 65px;
+	white-space:pre-line;
+	font-size:1.02em;
+	color:#3B0882;
+	visibility: hidden;
+}
+
+
+/********************************************************
+INSPIRATIONAL QUOTE DIV
+*********************************************************/
+
+#quote {
+	background:rgba(255,159,128,.5);
+	width:100%;
+	height:100%;
+	border-top: 5px solid #D2DADF;
+	min-width:1130px;
+}
+
+#quote p {
+	color:black;
+	border-top:;
+	text-align:left;
+	font-size: 2em;
+	white-space: pre-wrap;
+	margin:0px;
+	font-family: 'Helvetica-Neue', Helvetica, sans-serif;
+	font-weight:lighter;
+	padding: 4% 0;
+	color:#949494;
+	position: relative;
+	top: -20px;
+	float:center
+}
+
+/********************************************************
+Fun Fact SECTION
+*********************************************************/
+
+
+#beach {
+	/* top makes the home section line up RIGHT after the nav bar*/
+	position:relative;
+	height: 110vh; 
+	background-image: url("../images/friends.jpg"); 
+	background-position:left;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	margin-top:-45px;
+	border-top: 5px solid #D2DADF;
+	min-width:1130px;
+} 
+
+#someinfo {
+	background-color: rgba(255,255,255,.8);
+	width:45%;
+	border-radius: 40px;
+	padding:0;
+	position:relative;
+	top: 100px;
+	height: 60%;
+	margin-left: 50px;
+}
+
+#someinfo ul {
+	list-style: none;
+	font-size: 1.1em;
+	color:#240141;
+	padding-top: 15%;
+	right: 70px;
+	text-align:left;
+}
+
+#someinfo li {
+	padding-bottom: 10px;
+}
+
+/********************************************************
+LIFE SECTION
+*********************************************************/
+
+#life {
+	/* top makes the home section line up RIGHT after the nav bar*/
+	position:relative;
+	height: 190vh; 
+	background-color:black;
+	margin-top:-25px;
+	border-top: 5px solid #D2DADF;
+	min-width:1130px;
+} 
+
+ #life div {
+	border-radius:100%;
+	height:200px;
+	width:200px;
+	position: relative;
+	top:25px;
+	display:inline-block;
+	margin: 5% 3.5%;
+	background-image:contain;
+	background-repeat: no-repeat;
+} 
+
+#life div p {
+	text-align:right;
+	float:right;
+	top:100px;
+	right: 10px;
+}
+
+/********************************************************
+IMAGES
+*********************************************************/
+#pic1{
+	background-image: url("../images/fam2.JPG");
+	background-size: 200px 200px; 
+	background-size: cover;
+}
+
+#pic2, #pic6, #pic10, #pic14, #pic18, #pic22 {
+	background-color: rgb(255,255,255);
+	position:relative;
+	top:-50px;
+}
+
+#pic3{
+	background-image: url("../images/fam1.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+}
+
+#pic4{
+	background-image: url("../images/fam3.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+#pic5{
+	background-image: url("../images/p1.JPG");
+	background-size: 225px 265px;
+	background-size: cover;
+	background-position: center;
+}
+
+#pic9{
+	background-image: url("img/yogurt.png");
+	background-size: 200px 200px;
+}
+
+#pic7{
+	background-image: url("../images/p2.JPG");
+	background-size: 200px 350px;
+	background-position: center;
+	background-size: cover;
+
+}
+
+#pic8 {
+	background-image: url("../images/p3.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+#pic15 {
+	background-image: url("../images/t2.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+	background-position: left;
+}
+
+#pic16 {
+	background-image: url("../images/t3.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+#pic9 {
+	background-image: url("../images/b1.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+#pic11 {
+	background-image: url("../images/b2.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+#pic12 {
+	background-image: url("../images/b3.JPG");
+	background-size: 200px 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+#pic13 {
+	background-image: url("../images/siv.JPG");
+	background-size: 200px 200px;
+}
+
+
+/********************************************************
+CONTACT SECTION
+*********************************************************/
+
+#contact {
+	/* top makes the home section line up RIGHT after the nav bar*/
+	position:relative;
+	background-image:url("../images/contact.jpg"); 
+	background-position:left;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	margin-top:-25px;
+	height:110vh;
+	border-top: 5px solid #D2DADF;
+	min-width:1130px;
+} 
+
+.left {
+	float:left;
+	display: inline-block;
+	margin-top: 10%;
+	margin-left: 40px;
+}
+
+.left h3 {
+	font-family:'Helvetica-Neue', Helvetica, serif;
+	font-weight: 200;
+	color:#BEECFE;
+	font-size:3em;
+	position:relative;
+	top:-65px;
+}
+
+.left a {
+	text-decoration:none;
+	color:white;
+	font-family: 'Helvetica-Neue', Helvetica, serif;
+	font-weight:100;
+	padding-left: 30px;
+	position:relative;
+	top: 35vh;
+	
+}
+
+form {
+	float:right;
+	margin-right: 40px;
+	margin-top: 10%;
+}
+
+label {
+	color:white;
+	font-family: 'Helvetica-Neue', Helvetica, serif;
+	font-weight:100;
+	margin-bottom: 30px;
+}
+
+input,select {
+	margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
