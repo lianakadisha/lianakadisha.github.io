@@ -113,7 +113,7 @@ HOME SECTION
 	/* top makes the home section line up RIGHT after the nav bar*/
 	position:relative;
 	height: 110vh; 
-	background-image:url("../images/me1.jpg"); 
+	background-image:url("../images/me1.JPG"); 
 	background-position:left;
 	background-repeat: no-repeat;
 	background-attachment:fixed;
@@ -202,7 +202,7 @@ Fun Fact SECTION
 	/* top makes the home section line up RIGHT after the nav bar*/
 	position:relative;
 	height: 110vh; 
-	background-image: url("../images/friends.jpg"); 
+	background-image: url("../images/friends.JPG"); 
 	background-position:left;
 	background-repeat: no-repeat;
 	background-attachment:fixed;
@@ -273,7 +273,7 @@ LIFE SECTION
 IMAGES
 *********************************************************/
 #pic1{
-	background-image: url("../images/fam2.JPG");
+	background-image: url("../images/fam2.jpg");
 	background-size: 200px 200px; 
 	background-size: cover;
 }
@@ -291,7 +291,7 @@ IMAGES
 }
 
 #pic4{
-	background-image: url("../images/fam3.JPG");
+	background-image: url("../images/fam3.jpg");
 	background-size: 200px 200px;
 	background-size: cover;
 	background-position: center;
@@ -347,14 +347,14 @@ IMAGES
 }
 
 #pic11 {
-	background-image: url("../images/b2.JPG");
+	background-image: url("../images/b2.jpg");
 	background-size: 200px 200px;
 	background-size: cover;
 	background-position: center;
 }
 
 #pic12 {
-	background-image: url("../images/b3.JPG");
+	background-image: url("../images/b3.jpg");
 	background-size: 200px 200px;
 	background-size: cover;
 	background-position: center;
